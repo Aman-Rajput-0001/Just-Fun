@@ -1,3 +1,4 @@
+import OurServices from "@/components/OurServices";
 import BankingPartners from "@/components/BankingPartners";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
@@ -10,6 +11,7 @@ export default async function Services({ searchParams }) {
   const loan = LOANS.includes(sp.loan) ? sp.loan : LOANS[0];
   return (
     <div className="space-y-8 p-4 md:p-8">
+      <OurServices />
       <section className="owner-banner rounded-3xl p-7 text-white md:p-12">
         <p className="text-xs font-bold tracking-widest text-[#f2bc87]">
           BRICKBAAZ SERVICES

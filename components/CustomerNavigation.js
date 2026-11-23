@@ -146,7 +146,7 @@ export default function CustomerNavigation() {
           ].map(([label, id]) => (
             <Link
               key={id}
-              href={path === "/" ? `#${id}` : `/#${id}`}
+              href={id === "our-services" ? "/services" : path === "/" ? `#${id}` : `/#${id}`}
               onClick={close}
             >
               {label}
