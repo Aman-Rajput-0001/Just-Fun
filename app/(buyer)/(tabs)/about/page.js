@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon, btn } from "@/components/ui";
 import { businessInfo } from "@/lib/business";
 import { pageMetadata } from "@/lib/seo";
@@ -48,9 +49,9 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <a href="/#contact" className={btn("primary")}>
+          <Link href="/#contact" className={btn("primary")}>
             Talk to Brickbaaz <span aria-hidden="true">↗</span>
-          </a>
+          </Link>
         </div>
         <div className="about-panel relative overflow-hidden rounded-[32px] bg-navy p-7 text-white md:p-10">
           <div className="relative z-10">
